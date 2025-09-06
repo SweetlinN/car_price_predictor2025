@@ -71,7 +71,7 @@ def main():
               else:
                   st.warning("You can't sell this car")
      except:
-            st.warning("Something went wrong. Please try again.")
+         st.warning("Something went wrong. Please try again.")
          
          
           
