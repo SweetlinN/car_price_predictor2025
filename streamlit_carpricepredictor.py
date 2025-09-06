@@ -66,13 +66,13 @@ def main():
     
 
 
-        if st.button("Predict"):
-            pred = model.predict(data_new)
-            if pred[0] > 0:
-                st.balloons()
-                st.success("You can sell your car for {} lakhs".format(pred[0]))
-            else:
-                st.warning("You can't sell this car")
+            if st.button("Predict"):
+                pred = model.predict(data_new)
+                if pred[0] > 0:
+                    st.balloons()
+                    st.success("You can sell your car for {} lakhs".format(pred[0]))
+                else:
+                    st.warning("You can't sell this car")
     except:
            st.warning("Something went wrong. Please try again.") 
     
@@ -80,4 +80,5 @@ def main():
         
 if __name__ == '__main__':
     main()
+
 
