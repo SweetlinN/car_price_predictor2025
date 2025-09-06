@@ -62,7 +62,8 @@ def main():
 
     model = joblib.load('car_price_predictor.pkl')
      try:
-          if st.button('Predict'):
+          
+         if st.button('Predict'):
               pred = model.predict(data_new)
               if pred[0] > 0:
                   st.balloons()
@@ -75,21 +76,9 @@ def main():
          
           
          
-    
-
-    
-
-     
-         
-    
-
-
- 
-    
-
-        
 if __name__ == '__main__':
     main()
+
 
 
 
