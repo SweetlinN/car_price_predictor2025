@@ -70,14 +70,15 @@ def main():
                   st.success("You can sell your car for {:.2f} lakhs".format(pred[0]))
               else:
                   st.warning("You can't sell this car")
-     except:
-         st.warning("Something went wrong. Please try again.")
+    except:
+        st.warning("Something went wrong. Please try again.")
          
          
           
          
 if __name__ == '__main__':
     main()
+
 
 
 
