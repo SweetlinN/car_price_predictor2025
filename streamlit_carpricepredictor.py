@@ -61,7 +61,7 @@ def main():
 },index=[0])
 
     model = joblib.load('car_price_predictor.pkl')
-     try:
+    try:
           
          if st.button('Predict'):
               pred = model.predict(data_new)
